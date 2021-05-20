@@ -1,10 +1,14 @@
 package Domain;
 
-public class contaCorrente {
+public class contaCorrente extends conta {
 
-    public double validaSaldo(double num) {
-        return 0;
+    public contaCorrente(int numero) {
+        super(numero);
 
+    }
+
+    public boolean validaSaldo(double num) {
+        return false;
     }
 
 }
