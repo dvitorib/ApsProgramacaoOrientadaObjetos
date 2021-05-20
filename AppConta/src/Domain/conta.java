@@ -1,14 +1,18 @@
 package Domain;
 
 public abstract class conta {
-    int numero;
-    double saldo;
+    private int numero;
+    private double saldo;
 
     public conta(int numero) {
     }
 
     public int getNumero() {
         return numero;
+    }
+
+    public double getSaldo() {
+        return saldo;
     }
 
     public boolean depositar(double num) {

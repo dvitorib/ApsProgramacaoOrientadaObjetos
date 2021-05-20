@@ -1,13 +1,12 @@
 package Domain;
 
-public class contaCorrente extends conta {
-
-    public contaCorrente(int numero) {
-        super(numero);
-
-    }
+public class contaCorrente {
+    conta conta;
 
     public boolean validaSaldo(double num) {
+        if (conta.getSaldo() >= num) {
+            return true;
+        }
         return false;
     }
 

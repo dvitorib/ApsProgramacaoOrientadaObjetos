@@ -26,7 +26,7 @@ public class cliente {
     }
 
     public String ToString() {
-        return cpf;
+        return nome + cpf;
 
     }
 
